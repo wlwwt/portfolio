@@ -1,3 +1,3 @@
-GlobalVisions
+wlwwt
 =============
-TYPO3 configuration for GlobalVisions
+TYPO3 configuration for wlwwt
