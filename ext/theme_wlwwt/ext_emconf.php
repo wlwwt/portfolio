@@ -11,7 +11,7 @@
 ########################################################################
 
 $EM_CONF[$_EXTKEY] = array(
-	'title' => 'Modern package',
+	'title' => 'Theme WLWWT',
 	'description' => 'A modern package with all you need',
 	'category' => 'fe',
 	'shy' => 0,

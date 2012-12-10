@@ -110,6 +110,7 @@
 				<exclude name="build*properties"/>
 				<exclude name="README.md"/>
 				<exclude name="_typo3conf/"/><!-- exclude typo3conf -->
+				<exclude name="_template/"/><!-- exclude html template -->
 				<exclude name="*.*"/><!-- exclude every file in basedir -->
 			</fileset>
 		</copy>
