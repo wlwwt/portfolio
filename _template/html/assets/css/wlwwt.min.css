@@ -124,7 +124,7 @@ h1{font-size:49.5px;}
 h2{font-size:40.5px;}
 h3{font-size:31.5px;}
 h4{font-size:22.5px;}
-h5{font-size:18px;}
+h5{font-size:18px;font-weight:800;}
 h6{font-size:15.299999999999999px;}
 h1 small{font-size:31.5px;}
 h2 small{font-size:22.5px;}
@@ -600,6 +600,10 @@ button.btn.btn-mini,input[type="submit"].btn.btn-mini{*padding-top:1px;*padding-
 .navbar .btn-navbar{display:none;float:right;padding:7px 10px;margin-left:5px;margin-right:5px;}
 .navbar .btn-navbar .icon-bar{display:block;width:18px;height:2px;background-color:#f5f5f5;-webkit-border-radius:1px;-moz-border-radius:1px;border-radius:1px;-webkit-box-shadow:0 1px 0 rgba(0, 0, 0, 0.25);-moz-box-shadow:0 1px 0 rgba(0, 0, 0, 0.25);box-shadow:0 1px 0 rgba(0, 0, 0, 0.25);}
 .btn-navbar .icon-bar+.icon-bar{margin-top:3px;}
+.meta{font-familiy:Georgia,"Times New Roman",Times,serif;font-size:14px;line-height:8px;margin:27px 0;}
+.meta>ul{list-style:none;margin-left:10px;}
+.meta>ul>li{margin-bottom:0;}
+.meta>ul>li>a{font-style:italic;text-decoration:underline;}
 .breadcrumb{padding:8px 15px;margin:0 0 27px;list-style:none;background-color:#f5f5f5;-webkit-border-radius:4px;-moz-border-radius:4px;border-radius:4px;}.breadcrumb>li{display:inline-block;*display:inline;*zoom:1;text-shadow:0 1px 0 #ffffff;}.breadcrumb>li>.divider{padding:0 5px;color:#ccc;}
 .breadcrumb>.active{color:#999999;}
 .pagination{margin:27px 0;}
