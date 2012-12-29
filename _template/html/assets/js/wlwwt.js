@@ -1,0 +1,1 @@
+var slider = new Swipe(document.getElementById('slider'));

@@ -3,10 +3,10 @@
 
 
 .meta {
-    font-familiy: @subnavFontFamily;
-    font-size: @subnavFontSize;
-    line-height: @subnavLineHeight/2;
-    margin: (@baseLineHeight) 0;
+    font-familiy: @metaFontFamily;
+    font-size: @metaFontSize;
+    line-height: @metaLineHeight/2;
+    margin: (@baseLineHeight) 0 (@baseLineHeight)*1.3 0;
 
 }
 .meta > ul {
@@ -15,8 +15,14 @@
 }
 .meta > ul > li {
     margin-bottom: 0;
+line-height: @subnavLineHeight;
 }
 .meta > ul > li > a {
     font-style:italic;
     text-decoration:underline;
+    
 }
+.print {
+    margin-bottom:0px;
+}
+//.print > a {text-decoration:underline;}
