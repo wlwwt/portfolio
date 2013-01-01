@@ -24,9 +24,15 @@ page {
 			key.override.field = backend_layout
 
 			default = TEXT
-			default.value = EXT:theme_wlwwt/Resources/Private/Templates/modern_3col.html
+			default.value = EXT:theme_wlwwt/Resources/Private/Templates/standard.html
 			2 = TEXT
-			2.value = EXT:theme_wlwwt/Resources/Private/Templates/modern_2col.html
+			2.value = EXT:theme_wlwwt/Resources/Private/Templates/startpage.html
+			3 = TEXT
+			3.value = EXT:theme_wlwwt/Resources/Private/Templates/portfolio.html
+			4 = TEXT
+			4.value = EXT:theme_wlwwt/Resources/Private/Templates/portfolio_detail.html
+			5 = TEXT
+			5.value = EXT:theme_wlwwt/Resources/Private/Templates/impressum.html
 		}
 		#partialRootPath = EXT:theme_wlwwt/Resources/Private/Templates/
 		layoutRootPath = EXT:theme_wlwwt/Resources/Private/Templates/Layouts/
@@ -37,23 +43,23 @@ page {
 
 	# CSS files to be included
 	includeCSS {
-		file1 = EXT:theme_wlwwt/Resources/Public/Template/css/bootstrap.css
+		file1 = EXT:theme_wlwwt/Resources/Public/Template/css/wlwwt.min.css
 		file1.media = screen,print
-		file2 = EXT:theme_wlwwt/Resources/Public/Template/css/bootstrap-responsive.css
+		file2 = EXT:theme_wlwwt/Resources/Public/Template/css/wlwwt-responsive.min.css
 		file2.media = screen,print
-		file3 = EXT:theme_wlwwt/Resources/Public/Template/css/app.css
-		file3.media = screen,print
 	}
 
 	# JS files to be included
 	includeJSFooter {
-	#	file2 = EXT:theme_wlwwt/Resources/Public/Template/js/bootstrap.js
-		file3 = EXT:theme_wlwwt/Resources/Public/Template/js/bootstrap-dropdown.js
+		file1 = EXT:theme_wlwwt/Resources/Public/Template/js/swipe.min.js
+		file2 = EXT:theme_wlwwt/Resources/Public/Template/js/jquery.js
+		file3 = EXT:theme_wlwwt/Resources/Public/Template/js/collapse.js
+		file4 = EXT:theme_wlwwt/Resources/Public/Template/js/wlwwt.js
 	}
 
-	includeJSFooterlibs {
-	jQuery = EXT:theme_wlwwt/Resources/Public/Template/js/jquery.js
-	}
+	#includeJSFooterlibs {
+	#jQuery = EXT:theme_wlwwt/Resources/Public/Template/js/jquery.js
+	#}
 
 
 	# Add some good classes to the bodytag to make a styling of special pages easier

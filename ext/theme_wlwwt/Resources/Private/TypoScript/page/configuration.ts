@@ -12,10 +12,10 @@
 # **********************************************************
 
 page {
-	meta.viewport = width=100%, minimum-scale=1.0, maximum-scale=1.0
+	meta.viewport = width=device-width, initial-scale=1.0
 	#Favicon
 	headerData.4 = TEXT
-	headerData.4.value = <link rel="shortcut icon" href="{$plugin.theme_configuration.url}typo3conf/ext/modernpackage/Resources/Public/favicon.ico" />
+	headerData.4.value = <link rel="shortcut icon" href="{$plugin.theme_configuration.url}typo3conf/ext/theme_wlwwt/Resources/Public/Template/ico/favicon.ico" />
 }
 
 config {
@@ -66,16 +66,9 @@ config {
 	#stat_mysql = 1
 	#stat_typeNumList = 0
 
-	headerComment (
-######################################################################
-#                                   __                               #
-#                .--------.-----.--|  |.-----.----.-----.            #
-#                |        |  _  |  _  ||  -__|   _|     |            #
-#                |__|__|__|_____|_____||_____|__| |__|__|            #
-#                                                                    #
-#                   modern TYPO3 theme by Georg Ringer               #
-######################################################################
-	)
+		headerComment (
+        Thank you for reading our source code! Any suggestions or questions? please contact us: wolfgang.freund@wlwwt.de, www.wlwwt.de
+)
 
 
 }

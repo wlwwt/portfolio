@@ -9,7 +9,7 @@
 # **********************************************************
 # Constants
 # **********************************************************
-lib.constants.layouts.pid = 20
+lib.constants.layouts.pid = 12
 lib.constants.permissions.groupid = 1
 
 
@@ -42,8 +42,8 @@ TCEFORM.pages {
 # TCEFORM.tt_content.colPos.keepItems = 1,0,2
 
 # Set the default label and flag
-mod.SHARED.defaultLanguageLabel = English
-mod.SHARED.defaultLanguageFlag = gb.gif
+mod.SHARED.defaultLanguageLabel = Deutsch
+mod.SHARED.defaultLanguageFlag = de.gif
 
 # Show the content element wizard with tabs (for consistency)
 mod.wizards.newContentElement.renderMode = tabs

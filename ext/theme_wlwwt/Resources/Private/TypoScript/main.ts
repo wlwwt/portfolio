@@ -21,5 +21,5 @@
 <INCLUDE_TYPOSCRIPT: source="FILE:EXT:theme_wlwwt/Resources/Private/TypoScript/page/seo.ts">
 
 
-<INCLUDE_TYPOSCRIPT: source="FILE:EXT:theme_wlwwt/Resources/Private/TypoScript/page/debug.ts">
+#<INCLUDE_TYPOSCRIPT: source="FILE:EXT:theme_wlwwt/Resources/Private/TypoScript/page/debug.ts">
 
