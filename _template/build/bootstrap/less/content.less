@@ -1,4 +1,32 @@
 .content {
     padding-right:@contentPadding;
 }
-.main {margin-top: @mainPadding;}
+.contact {margin-top: @mainPadding;}
+
+.contact {
+    font-familiy: @baseFontFamily;
+    font-size: @baseFontSize;
+    line-height: @baseLineHeight/2;
+    margin: (@baseLineHeight) 0 (@baseLineHeight)*1.3 0;
+
+}
+.contact > ul {
+    list-style:none;
+    margin-left:0px;
+}
+.contact > ul > li {
+    margin-bottom: 0;
+    line-height: @baseLineHeight;
+}
+.contact > ul > li > a {
+    font-style:italic;
+    text-decoration:underline;
+    
+}
+
+.author {
+    background-color: @black;
+    color: @white;
+    padding: 5px;
+    line-height: @baseLineHeight*2; 
+}

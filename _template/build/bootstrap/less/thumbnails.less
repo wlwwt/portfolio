@@ -26,17 +26,9 @@
 // The actual thumbnail (can be `a` or `div`)
 .thumbnail {
   display: block;
-  padding: 4px;
+  //padding: 4px;
   line-height: @baseLineHeight;
-  border: 1px solid #ddd;
-  .border-radius(@baseBorderRadius);
-  .box-shadow(0 1px 3px rgba(0,0,0,.055));
-  .transition(all .2s ease-in-out);
-}
-// Add a hover state for linked versions only
-a.thumbnail:hover {
-  border-color: @linkColor;
-  .box-shadow(0 1px 4px rgba(0,105,214,.25));
+  
 }
 
 // Images and captions
@@ -45,8 +37,20 @@ a.thumbnail:hover {
   max-width: 100%;
   margin-left: auto;
   margin-right: auto;
+  border: 5px solid #fff;
+}
+// Images and captions
+.thumbnail > img:hover {
+  border-color: @giantgoldfish;
 }
 .thumbnail .caption {
-  padding: 9px;
-  color: @gray;
+    text-align:center;
+    
+}
+
+p.thumbnail-title {
+    
+    font-familiy: @baseFontFamily;
+    font-size: @baseFontSize;
+    line-height: @baseLineHeight;
 }
