@@ -6,48 +6,40 @@
 #	either version 2 of the License, or (at your option) any later version.
 # ******************************************************************************
 
-# **********************************************************
-# Library for TypoScript about general library objects.
-# Content:
-#	* Copyright Information
-#	* Header slogan
-#	* Footer image
-# **********************************************************
 
 
 #-------------------------------------------------------------------------------
-#	GENERAL: Copyright Information
+#	GENERAL: Logo Link
 #-------------------------------------------------------------------------------
-lib.copyright_information = COA
-lib.copyright_information {
-	10 = TEXT
-	10 {
-		data = date:U
-		strftime = %Y
-		noTrimWrap = || {LLL:EXT:theme_wlwwt/Resources/Private/Language/locallang.xml:copyright}|
-		noTrimWrap.insertData = 1
-		typolink.parameter = {$plugin.theme_configuration.general.copyright_information.link}
+# <a class="brand" href="#"><span>wlwwt</span></a>
+lib.general.logo = COA
+lib.general.logo {
+        10 = TEXT
+	10 {	
+            value = <span>wlwwt - TYPO3, Magento, Shopware aus Passau</span>
+            typolink.ATagParams = class="brand"
+            typolink.parameter = {$plugin.theme_configuration.general.logo.link}
 	}
 }
-
 #-------------------------------------------------------------------------------
-#	GENERAL: Header slogan
+#	GENERAL: Copyright
 #-------------------------------------------------------------------------------
-lib.header_slogan = COA
-lib.header_slogan {
-	10 = TEXT
-	10 {
-		value = III Modern <div>package</div>
+# <p>&copy; wlwwt 2012</p>
+lib.general.copyright = COA
+lib.general.copyright {
+        10 = TEXT
+	10 {	
+            value = <p>&copy; wlwwt 2012</p>
 	}
 }
-
 #-------------------------------------------------------------------------------
-#	GENERAL: Footer image
+#	GENERAL: Print
 #-------------------------------------------------------------------------------
-lib.footer_logo = COA
-lib.footer_logo {
-	10 = IMAGE
-	10 {
-		file = EXT:theme_wlwwt/Resources/Public/Template/img/logo-government-package-footer.png
+# <a href="javascript:self.print()"><i class="icon-print"></i>&nbsp;Seite drucken</a> 
+lib.general.print-page = COA
+lib.general.print-page {
+        10 = TEXT
+	10 {	
+            value = <a href="javascript:self.print()"><i class="icon-print"></i>&nbsp;Seite drucken</a>
 	}
 }

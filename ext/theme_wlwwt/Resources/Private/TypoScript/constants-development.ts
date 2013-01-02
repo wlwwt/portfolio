@@ -13,14 +13,21 @@
 
 plugin.theme_configuration.url = http://localhost/wlwwt/
 
+plugin.theme_configuration.general.logo.link = 1
 
-plugin.theme_configuration.navigation_header = 6
+plugin.theme_configuration.navigation_header = 2,3,4,5
 plugin.theme_configuration.navigation_footer = 7
 
-plugin.theme_configuration.extensions.indexed_search.form-target = 241
+plugin.theme_configuration.extensions.indexed_search.form-target = 22
+
 plugin.theme_configuration.extensions.news.latest {
 	limit = 3
 	detailPid = 259
 	startingpoint = 260
 	cropMaxCharacters = 120
 }
+
+# **********************************************************
+# Changes in styles
+# **********************************************************
+styles.content.imgtext.maxW = 1030

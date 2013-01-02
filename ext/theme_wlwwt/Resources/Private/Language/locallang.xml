@@ -21,17 +21,7 @@
 			<label index="tt_content.layout.box-error">Box Error</label>
 
 			<!-- Frontend -->
-			<label index="search-placeholder">Search text</label>
-			<label index="search-submit">Search</label>
-			<label index="language_switch-label">Language</label>
-			<label index="copyright">© Georg Ringer, distributed under GPL</label>
-			<label index="print">Print</label>
-			<label index="language">Language</label>
-			<label index="toplink">To the top</label>
-			<label index="printlink">Print this page</label>
-			<label index="tip">Recommend page</label>
-			<label index="pdflink">As PDF</label>
-			<label index="download">Download</label>
+			<label index="search-placeholder">Ich suche nach ...</label>
 		</languageKey>
 
 <!-- DE -->

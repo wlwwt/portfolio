@@ -66,8 +66,9 @@ config {
 	#stat_mysql = 1
 	#stat_typeNumList = 0
 
-		headerComment (
-        Thank you for reading our source code! Any suggestions or questions? please contact us: wolfgang.freund@wlwwt.de, www.wlwwt.de
+        headerComment (
+Realisation: wlwwt UG (haftungsbeschränkt)
+Kontakt: http://www.wlwwt.de / Tel. +49 170 29 18 949 / wolfgang.freund@wlwwt.de
 )
 
 

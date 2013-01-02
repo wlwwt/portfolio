@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<f:layout name="Default" />
 <html lang="en">
   <head>
     <meta charset="utf-8">
@@ -25,36 +26,13 @@
   </head>
 
   <body>
+  <f:section name="body">
 
-    <div class="navbar navbar-static-top">
-      <div class="navbar-inner">
-        <div class="container">
-          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </a>
-            <div class="row">
-                <div class="span2"><a class="brand" href="#"><span>wlwwt</span></a></div>
-                <div class="span10">
-                    <div class="nav-collapse collapse">
-                        <ul class="nav">
-                          <li><a href="#">Referenzen</a></li>
-                          <li class="active"><a href="#about">Kompetenzen</a></li>
-                          <li><a href="">Über uns</a></li>
-                          <li><a href="">Incubator</a></li>
-                        </ul>
-                        <form class="navbar-search pull-right">
-                          <input class="span4" type="text" placeholder="Suchbegriff">
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
-      </div>
-    </div>
+    <f:render partial="page/header" arguments="{data:data}" />
 
     <div class="container">
+        
+        <f:cObject typoscriptObjectPath="lib.content.header"> 
         <div class="row">
             
             <div class="slider-unit hidden-tablet hidden-phone">
@@ -108,15 +86,23 @@
             </div>
             
         </div>
+        </f:cObject>
        
         <div class="main"> 
             <div class="row">
               <div class="span3">
+                  
+                <f:cObject typoscriptObjectPath="lib.content.meta">
                 <h4>Mit Responsive Design zukunftssicher</h4>
                 <p>Anwender greifen zunehmend mit Smartphones und Tablets aufs Internet zu. Responsive Webdesign hilft Ihnen den Web-Auftritt dafür zu optimieren.</p>
-                <p><a class="btn btn-primary btn-small">mehr</a></p>
+                <p><a class="btn btn-primary btn-small">mehr</a></p>    
+                </f:cObject>
+                
               </div>
               <div class="span3">
+                <f:cObject typoscriptObjectPath="lib.content.border">
+                      
+                </f:cObject>
                 <h4>Shoplocator - leistungsstark und intuitiv</h4>
                 <p>In unserem neuesten Incubator-Projekt stellen wir Ihnen einen Shoplocator (mit mehreren tausend Einträgen) auf Basis von <a href="#">Apache Solr</a> vor.</p>
                 <p><a class="btn btn-primary btn-small">zum Incubator</a></p>
@@ -157,7 +143,9 @@
         </footer>
 
     </div>
-      
+    
+    </f:section>
+  
     <script src="assets/js/swipe.min.js"></script>
     <script src="assets/js/wlwwt.js"></script>
 
