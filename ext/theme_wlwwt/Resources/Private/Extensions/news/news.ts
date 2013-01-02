@@ -13,28 +13,28 @@
 
 plugin.tx_news {
 	view {
-		templateRootPath = EXT:theme_wlwwt/Resources/Private/Extensions/news/Templates/
-		partialRootPath = EXT:theme_wlwwt/Resources/Private/Extensions/news/Partials/
-		layoutRootPath = EXT:theme_wlwwt/Resources/Private/Extensions/news/Layouts/
-        widget.Tx_News_ViewHelpers_Widget_PaginateViewHelper.templateRootPath = EXT:theme_wlwwt/Resources/Private/Extensions/news/
+            templateRootPath = EXT:theme_wlwwt/Resources/Private/Extensions/news/Templates/
+            partialRootPath = EXT:theme_wlwwt/Resources/Private/Extensions/news/Partials/
+            layoutRootPath = EXT:theme_wlwwt/Resources/Private/Extensions/news/Layouts/
+            widget.Tx_News_ViewHelpers_Widget_PaginateViewHelper.templateRootPath = EXT:theme_wlwwt/Resources/Private/Extensions/news/
 	}
-
+        settings.cssFile >
 	settings.list.media.image {
-		maxHeight = 150
-		maxWidth = 260
-
+            maxWidth = 260
+            maxHeight = 150
 	}
+
         settings.list.paginate.templatePath = typo3conf/ext/theme_wlwwt/Resources/Private/Extensions/news/ViewHelpers/Widget/Paginate/Index.html
 	settings.cropMaxCharacters = 300
 	settings.list.paginate.insertAbove = 0
         settings.list.paginate.itemsPerPage = 6
 
 	settings.list.rss.channel {
-		title = wlwwt Referenzen
-		description =
-		link = http://www.wlwwt.de
-		language = de_DE
-		copyright = wlwwt
+            title = wlwwt Referenzen
+            description =
+            link = http://www.wlwwt.de
+            language = de_DE
+            copyright = wlwwt
 	}
 }
 

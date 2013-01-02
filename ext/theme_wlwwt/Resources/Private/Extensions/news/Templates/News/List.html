@@ -20,9 +20,13 @@
 			<f:else>
 				<div class="news news-list-view">
 					<n:widget.paginate objects="{news}" as="paginatedNews" configuration="{settings.list.paginate}">
-							<f:for each="{paginatedNews}" as="newsItem">
-								<f:render partial="List/Item-list" arguments="{newsItem: newsItem, settings:settings}"/>
-							</f:for>
+                                            
+                                            <ul class="thumbnails">
+                                                <f:for each="{paginatedNews}" as="newsItem">
+                                                    <f:render partial="List/Item-list" arguments="{newsItem: newsItem, settings:settings}"/>
+                                                </f:for>
+                                            </ul>	
+                                                
 					</n:widget.paginate>
 				</div>
 			</f:else>

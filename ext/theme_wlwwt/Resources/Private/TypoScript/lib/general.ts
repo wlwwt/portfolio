@@ -29,7 +29,9 @@ lib.general.copyright = COA
 lib.general.copyright {
         10 = TEXT
 	10 {	
-            value = <p>&copy; wlwwt 2012</p>
+            noTrimWrap = |<p>&copy; wlwwt |</p>|
+            data = date:U
+            strftime = %Y
 	}
 }
 #-------------------------------------------------------------------------------
