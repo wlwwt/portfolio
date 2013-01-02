@@ -1,27 +1,47 @@
-<div class="row section-headerimage">
-	<div class="span12">
-		<div class="inner">
-			<f:cObject typoscriptObjectPath="lib.header_slogan">
-				<img class="logo" src="img/logo-government-package.png">
-			</f:cObject>
-		</div>
-	</div>
-</div>
+<div class="container head-container">
+	<div class="row section-headernavigation">
+		<div class="span12">
+			<div class="navbar">
+				<div class="navbar-inner">
+					<div class="container" style="width: auto;">
+						<div class="nav-collapse">
+							<f:cObject typoscriptObjectPath="lib.navigation.service-top">
+								<ul class="nav">
+									<li><a href="#">Start</a></li>
+									<li><a href="#">Glossar</a></li>
+									<li><a href="#">Inhaltsverzeichnis</a></li>
+									<li><a href="#">Kontakt</a></li>
+								</ul>
+							</f:cObject>
 
-<div class="row section-breadcrumb">
-	<div class="span12">
-		<f:cObject typoscriptObjectPath="lib.navigation.breadcrumb">
-			<ul class="breadcrumb">
-				<li>
-					<a href="#">Home</a>
-				</li>
-				<li>
-					<a href="#">Library</a>
-				</li>
-				<li class="active">
-					<a href="#">Data</a>
-				</li>
-			</ul>
-		</f:cObject>
+							<ul class="nav pull-right">
+								<li>
+									<f:cObject typoscriptObjectPath="lib.extensions.indexed_search_box">
+										<form class="pull-left searchform-short" action="">
+											<input type="text" class="seaxrch-query span2" placeholder="Search">
+											<button class="btn btn-mini">Go</button>
+										</form>
+									</f:cObject>
+								</li>
+								<f:cObject typoscriptObjectPath="lib.navigation.service-top-right">
+									<li><a href="#">Link</a></li>
+								</f:cObject>
+								<li class="dropdown">
+									<f:cObject typoscriptObjectPath="lib.navigation.languageswitch">
+										<a href="#" class="dropdown-toggle" data-toggle="dropdown">Language <b class="caret"></b></a>
+										<ul class="dropdown-menu">
+											<li><a href="#">English</a></li>
+											<li><a href="#">German</a></li>
+											<li class="divider"></li>
+											<li><a href="#">More about this</a></li>
+										</ul>
+									</f:cObject>
+								</li>
+							</ul>
+						</div><!-- /.nav-collapse -->
+					</div>
+				</div><!-- /navbar-inner -->
+			</div>
+		</div>
 	</div>
 </div>
