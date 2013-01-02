@@ -3,7 +3,7 @@
 #
 #	You can redistribute it and/or modify it under the terms of the
 #	GNU General Public License as published by the Free Software Foundation;
-#	either version 2 of the License, or (at your option) any later version.
+#	either version 2 of the License, or at your option) any later version.
 # ******************************************************************************
 
 
@@ -19,7 +19,23 @@ plugin.tx_news {
         widget.Tx_News_ViewHelpers_Widget_PaginateViewHelper.templateRootPath = EXT:theme_wlwwt/Resources/Private/Extensions/news/
 	}
 
+	settings.list.media.image {
+		maxHeight = 150
+		maxWidth = 260
+
+	}
+        settings.list.paginate.templatePath = typo3conf/ext/theme_wlwwt/Resources/Private/Extensions/news/ViewHelpers/Widget/Paginate/Index.html
+	settings.cropMaxCharacters = 300
 	settings.list.paginate.insertAbove = 0
+        settings.list.paginate.itemsPerPage = 6
+
+	settings.list.rss.channel {
+		title = wlwwt Referenzen
+		description =
+		link = http://www.wlwwt.de
+		language = de_DE
+		copyright = wlwwt
+	}
 }
 
 
@@ -45,7 +61,45 @@ lib.extensions.news_latest {
 		detailPid = {$plugin.theme_configuration.extensions.news.latest.detailPid}
 		limit = {$plugin.theme_configuration.extensions.news.latest.limit}
 		startingpoint = {$plugin.theme_configuration.extensions.news.latest.startingpoint}
-
 		isLatest = 1
 	}
 }
+
+#-------------------------------------------------------------------------------
+#	EXT:news RSS feed
+#-------------------------------------------------------------------------------
+
+# RSS Feed
+[globalVar = TSFE:type = 9818]
+	# Cleanup
+	lib.stdheader >
+	tt_content.stdWrap.innerWrap >
+	tt_content.stdWrap.outerWrap >
+	tt_content.stdWrap.wrap >
+
+	pageNewsRSS = PAGE
+	pageNewsRSS.typeNum = 9818
+	pageNewsRSS.10 < styles.content.get
+	pageNewsRSS.10.select.where = colPos=0 AND list_type = "news_pi1"
+	pageNewsRSS.10.select {
+	  orderBy = sorting DESC
+	  max = 1
+	}
+
+  config {
+	# deactivate Standard-Header
+	disableAllHeaderCode = 1
+	# no xhtml tags
+	xhtml_cleaning = none
+	admPanel = 0
+	metaCharset = utf-8
+	# define charset
+	additionalHeaders = Content-Type:text/xml;charset=utf-8
+	disablePrefixComment = 1
+	baseURL = {$plugin.theme_configuration.url}
+	absRefPrefix = {$plugin.theme_configuration.url}
+  }
+
+	# set the format
+	plugin.tx_news.settings.format = xml
+[global]

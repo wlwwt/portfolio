@@ -16,13 +16,16 @@
 #-------------------------------------------------------------------------------
 #	EXT:indexed_search Searchbox for the top bar
 #-------------------------------------------------------------------------------
+#<form class="navbar-search pull-right">
+#<input class="span4" type="text" placeholder="Suchbegriff">
+#</form>
 lib.extensions.indexed_search_box = COA
 lib.extensions.indexed_search_box {
 
 	# Open form tag and set URL to target page
 	10 = TEXT
 	10 {
-		wrap = <form class="pull-left searchform-short" action="|" method="post">
+		wrap = <form class="navbar-search pull-right" action="|" method="post">
 		typolink {
 			parameter = {$plugin.theme_configuration.extensions.indexed_search.form-target}
 			returnLast = url
@@ -34,8 +37,7 @@ lib.extensions.indexed_search_box {
 	20 {
 		insertData = 1
 		value (
-			<input type="text" class="span2" placeholder="{LLL:EXT:theme_wlwwt/Resources/Private/Language/locallang.xml:search-placeholder}">
-				<button class="btn btn-mini">{LLL:EXT:theme_wlwwt/Resources/Private/Language/locallang.xml:search-submit}</button>
+			<input class="span4" type="text" placeholder="{LLL:EXT:theme_wlwwt/Resources/Private/Language/locallang.xml:search-placeholder}">
 			</form>
 		)
 	}
