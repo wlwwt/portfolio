@@ -40,6 +40,7 @@ lib.general.print-page = COA
 lib.general.print-page {
         10 = TEXT
 	10 {	
-            value = <a href="javascript:self.print()"><i class="icon-print"></i>&nbsp;Seite drucken</a>
+            data = LLL:EXT:theme_wlwwt/Resources/Private/Language/locallang.xml:print-page
+            wrap = <a href="javascript:self.print()"><i class="icon-print"></i>&nbsp;|</a>
 	}
 }

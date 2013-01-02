@@ -22,6 +22,7 @@
 
 			<!-- Frontend -->
 			<label index="search-placeholder">Ich suche nach ...</label>
+			<label index="print-page">Seite drucken</label>
 		</languageKey>
 
 <!-- DE -->
