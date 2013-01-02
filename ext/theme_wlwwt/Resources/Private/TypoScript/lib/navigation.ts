@@ -59,7 +59,8 @@ lib.navigation.subnav {
 
 	10 = HMENU
 	10 {
-		1 = TMENU
+		entryLevel = 1
+                1 = TMENU
 		1 {
 			noBlur = 1
 

@@ -12,8 +12,8 @@
 # **********************************************************
 
 page.meta {
-	keywords.field = typo3, magento, shopware, passau, niederbayern, wlwwt
-	description.field = wlwwt - Ihr Experte für TYPO3, Magento und Shopware in und um Passau, Niederbayern
+	keywords.field = keywords
+	description.field = description
 	abstract.field = abstract
 	robots = INDEX,FOLLOW
 }
