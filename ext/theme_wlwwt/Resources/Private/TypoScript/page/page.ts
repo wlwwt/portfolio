@@ -33,6 +33,8 @@ page {
 			4.value = EXT:theme_wlwwt/Resources/Private/Templates/portfolio_detail.html
 			5 = TEXT
 			5.value = EXT:theme_wlwwt/Resources/Private/Templates/impressum.html
+			6 = TEXT
+			6.value = EXT:theme_wlwwt/Resources/Private/Templates/maintenance.html
 		}
 		#partialRootPath = EXT:theme_wlwwt/Resources/Private/Templates/
 		layoutRootPath = EXT:theme_wlwwt/Resources/Private/Templates/Layouts/
