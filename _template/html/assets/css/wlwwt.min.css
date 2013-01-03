@@ -509,8 +509,8 @@ footer>a{text-decoration:underline;}
 .row-fluid .thumbnails{margin-left:0;}
 .thumbnails>li{float:left;margin-bottom:27px;margin-left:20px;}
 .thumbnail{display:block;line-height:27px;}
-.thumbnail>img{display:block;max-width:100%;margin-left:auto;margin-right:auto;border:5px solid #fff;}
-.thumbnail>img:hover{border-color:#f38630;}
+.thumbnail>a>img{display:block;max-width:100%;margin-left:auto;margin-right:auto;border:5px solid #FFF;}
+.thumbnail>a img:hover{border-color:#f38630;}
 .thumbnail .caption{text-align:center;}
 p.thumbnail-title{font-familiy:Georgia,"Times New Roman",Times,serif;font-size:18px;line-height:27px;}
 .slider-control{font-size:126px;line-height:189px;text-shadow:0 1px 1px rgba(0, 0, 0, 0.4);}

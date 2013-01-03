@@ -23,6 +23,14 @@
 			<!-- Frontend -->
 			<label index="search-placeholder">Ich suche nach ...</label>
 			<label index="print-page">Seite drucken</label>
+			<label index="visit-page">Besuchen Sie die Seite</label>
+			<label index="benefits">Leistungen</label>
+			<label index="download">Download</label>
+			<label index="social-media">Social Media</label>
+			<label index="contact">Ihr Ansprechpartner</label>
+			<label index="contact-name">Wolfgang Freund</label>
+			<label index="contact-phone">Tel.: +49 170 29 18 949</label>
+			<label index="contact-email">wolfgang.freund@wlwwt.de</label>
 		</languageKey>
 
 <!-- DE -->

@@ -1,28 +1,14 @@
 {namespace n=Tx_News_ViewHelpers}
 
-<f:if condition="{newsItem.alternativeTitle}">
-	<f:then><n:metaTag property="og:title" content="{newsItem.alternativeTitle}" /></f:then>
-	<f:else><n:metaTag property="og:title" content="{newsItem.title}" /></f:else>
-</f:if>
-<n:metaTag property="og:type" content="{settings.opengraph.type}" />
-<n:metaTag property="og:url" content="" useCurrentDomain="1" />
-<n:metaTag property="og:site_name" content="{settings.opengraph.site_name}" />
-<f:if condition="{newsItem.firstImagePreview.image}">
-	<n:metaTag
-		property="og:image"
-		content="{f:uri.image(src:'uploads/tx_news/{newsItem.firstImagePreview.image}' maxWidth:'100')}"
-		forceAbsoluteUrl="1" />
-</f:if>
-<n:metaTag property="fb:admins" content="{settings.opengraph.admins}" />
-<n:metaTag property="og:description" content="{newsItem.teaser}" />
-<n:metaTag property="fb:admins" content="{settings.opengraph.admins}" />
-<n:metaTag property="og:email" content="{settings.opengraph.email}" />
-<n:metaTag property="og:phone_number" content="{settings.opengraph.phone_number}" />
-<n:metaTag property="og:fax_number" content="{settings.opengraph.fax_number}" />
-<n:metaTag property="og:latitude" content="{settings.opengraph.latitude}" />
-<n:metaTag property="og:longitude" content="{settings.opengraph.longitude}" />
-<n:metaTag property="og:street-address" content="{settings.opengraph.street-address}" />
-<n:metaTag property="og:locality" content="{settings.opengraph.locality}" />
-<n:metaTag property="og:region" content="{settings.opengraph.region}" />
-<n:metaTag property="og:postal-code" content="{settings.opengraph.postal-code}" />
-<n:metaTag property="og:country-name" content="{settings.opengraph.country-name}" />
+<!-- AddThis Button BEGIN -->
+<div class="addthis_toolbox addthis_default_style ">
+<a class="addthis_button_preferred_1"></a>
+<a class="addthis_button_preferred_2"></a>
+<a class="addthis_button_preferred_3"></a>
+<a class="addthis_button_preferred_4"></a>
+<a class="addthis_button_compact"></a>
+<a class="addthis_counter addthis_bubble_style"></a>
+</div>
+<script type="text/javascript">var addthis_config = {"data_track_addressbar":true};</script>
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-50688c6d6cc38c17"></script>
+<!-- AddThis Button END -->

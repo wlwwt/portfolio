@@ -28,6 +28,7 @@ plugin.tx_news {
 	settings.cropMaxCharacters = 300
 	settings.list.paginate.insertAbove = 0
         settings.list.paginate.itemsPerPage = 6
+        settings.opengraph.site_name = {$plugin.theme_configuration.extensions.news.opengraph.site_name}
 
 	settings.list.rss.channel {
             title = wlwwt Referenzen

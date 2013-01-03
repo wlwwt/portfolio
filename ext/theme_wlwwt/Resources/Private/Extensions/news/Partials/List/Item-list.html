@@ -4,7 +4,8 @@
 		Partials/List/Item.html
 -->
 <li class="span3">
-    <!-- header -->
+    <div class="thumbnail">
+     
     <n:link newsItem="{newsItem}" settings="{settings}">
         <f:if condition="{newsItem.media}">
             <!-- media preview element -->
@@ -50,4 +51,6 @@
         </div>
 
     </n:link>
+           
+    </div>
 </li>

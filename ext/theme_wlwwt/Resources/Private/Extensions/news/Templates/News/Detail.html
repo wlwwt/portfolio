@@ -8,7 +8,6 @@
 -->
 
 <f:section name="content">
-	<h1>=> {newsItem.txNewsextendedExtrafield1} <= </h1>
 	<f:if condition="{newsItem}">
 		<f:then>
 			<n:format.nothing>
@@ -18,47 +17,135 @@
 				</f:if>
 				<f:render partial="Detail/Opengraph" arguments="{newsItem: newsItem, settings:settings}"/>
 			</n:format.nothing>
-			<div class="header">
-				<h3>{newsItem.title}</h3>
-			</div>
-			<div class="footer" role="contentinfo">
-				<p>
-					<!-- date -->
-					<span class="news-list-date">
-						<f:format.date format="d.m.Y">{newsItem.datetime}</f:format.date>
-					</span>
+			<div class="row">
+            
+                            <div class="slider-unit">
 
-					<f:if condition="{newsItem.categories}">
-						<f:render partial="Category/Items" arguments="{categories:newsItem.categories, settings:settings}"/>
-					</f:if>
+                                <div class="span1">
+                                     <div class="slider-control  hidden-phone">
+                                         <a href="#">&lsaquo;</a>
+                                     </div>
+                                 </div>
 
-					<f:if condition="{newsItem.author}">
-						<!-- author -->
-						<span class="news-list-author">
-							<f:translate key="author" arguments="{0:newsItem.author}"></f:translate>
-						</span>
-					</f:if>
-				</p>
-			</div>
+                                 <div class="span10">
+                                     <div class="row pull-center  hidden-phone">
+                                        <f:render partial="Detail/MediaContainer" arguments="{media: newsItem.media, settings:settings}"/>
+                                     </div>
+                                     <div class="row pull-center">
+                                          <h1>{newsItem.title}</h1>
+                                          <f:if condition="{newsItem.teaser}">
+                                          <h3>{newsItem.teaser}</h3>
+                                          </f:if>
+                                     </div>
+                                 </div>
 
-			<f:if condition="{newsItem.teaser}">
-				<!-- teaser -->
-				<div class="teaser-text">
-					{newsItem.teaser}
-				</div>
-			</f:if>
+                                 <div class="span1">
+                                     <div class="slider-control  hidden-phone">
+                                         <a href="#">&rsaquo;</a>
+                                     </div>
+                                 </div>
 
-			<f:if condition="{newsItem.contentElements}">
-				<!-- content elements -->
-				<f:cObject typoscriptObjectPath="lib.tx_news.contentElementRendering">{newsItem.contentElementIdList}</f:cObject>
-			</f:if>
+                            </div>
 
-			<f:render partial="Detail/MediaContainer" arguments="{media: newsItem.media, settings:settings}"/>
+                        </div>
+                    
+                        <hr>
+                    
+                        <div class="row">
+                            <div class="span12">
+                                <div class="row">
 
-			<!-- main text -->
-			<div class="news-text-wrap">
-				<f:format.html>{newsItem.bodytext}</f:format.html>
-			</div>
+                                    <div class="span9">
+                                        <div class="content">
+                                            <f:format.html>{newsItem.bodytext}</f:format.html>
+                                            <div class="contact">
+                                                <span class="author"><f:translate key="LLL:EXT:theme_wlwwt/Resources/Private/Language/locallang.xml:contact" /></span>
+                                                <ul>
+                                                    <li><f:translate key="LLL:EXT:theme_wlwwt/Resources/Private/Language/locallang.xml:contact-name" /></li>                                                                
+                                                    <li><f:translate key="LLL:EXT:theme_wlwwt/Resources/Private/Language/locallang.xml:contact-phone" /></li>
+                                                    <li><f:link.email email="{f:translate(key:'LLL:EXT:theme_wlwwt/Resources/Private/Language/locallang.xml:contact-email')}"><f:translate key="LLL:EXT:theme_wlwwt/Resources/Private/Language/locallang.xml:contact-email" /></f:link.email></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="span3">
+                                        
+                                        <div class="meta">
+                                            <p><i class="icon-tags"></i>&nbsp;<f:translate key="LLL:EXT:theme_wlwwt/Resources/Private/Language/locallang.xml:benefits" /></p>
+                                            <ul>
+                                                <f:if condition="{newsItem.tags}">
+                                                <!-- Related tags -->
+                                                    <li>
+                                                        <f:for each="{newsItem.tags}" as="tag" iteration="interator">
+                                                            <f:if condition="{interator.isLast}">
+                                                                <f:then>
+                                                                    {tag.title}
+                                                                </f:then>
+                                                                <f:else>
+                                                                    {tag.title},
+                                                                </f:else>
+                                                            </f:if>
+
+                                                        </f:for>
+                                                    </li>
+                                                </f:if>
+                                            </ul>
+                                        </div>
+                                        
+                                        <div class="meta">
+                                            <p><i class="icon-home"></i>&nbsp;<f:translate key="LLL:EXT:theme_wlwwt/Resources/Private/Language/locallang.xml:visit-page" /></p>
+                                            <ul>
+                                            <f:if condition="{newsItem.relatedLinks}">
+                                                <!-- Related links -->
+                                                <f:for each="{newsItem.relatedLinks}" as="relatedLink">
+                                                    <li>
+                                                            <f:link.page pageUid="{relatedLink.uri}">{relatedLink.title}</f:link.page>
+                                                    </li>
+                                                </f:for>
+                                            </f:if>
+                                            </ul>
+                                        </div>
+                                        
+                                        <f:if condition="{newsItem.relatedFiles}">
+                                            <!-- Related files -->
+                                            <div class="meta">
+                                               <p><i class="icon-download"></i>&nbsp;<f:translate key="LLL:EXT:theme_wlwwt/Resources/Private/Language/locallang.xml:download" /></p>
+                                                <ul>
+                                                    <f:for each="{newsItem.relatedFiles}" as="relatedFile">
+                                                            <li>
+                                                                <n:format.fileDownload file="uploads/tx_news/{relatedFile.file}" configuration="{settings.relatedFiles.download}">
+                                                                        <f:if condition="{relatedFile.title}">
+                                                                                <f:then>
+                                                                                        {relatedFile.title}
+                                                                                </f:then>
+                                                                                <f:else>
+                                                                                        {relatedFile.file}
+                                                                                </f:else>
+                                                                        </f:if>
+                                                                </n:format.fileDownload>
+
+                                                            </li>
+                                                    </f:for>
+                                                </ul>
+                                            </div>
+                                        </f:if>
+
+                                        <div class="meta">
+                                          <p><i class="icon-share"></i>&nbsp;<f:translate key="LLL:EXT:theme_wlwwt/Resources/Private/Language/locallang.xml:download" /></p>
+                                          <ul>
+                                              <li>
+                                                <f:render partial="Detail/Addthis" arguments="{newsItem: newsItem, settings:settings}"/> 
+                                              </li>
+                                          </ul>
+
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
 
 			<f:if condition="{settings.backPid}">
 				<!-- Link Back -->
@@ -91,48 +178,7 @@
 					</div>
 				</f:if>
 
-				<f:if condition="{newsItem.relatedFiles}">
-					<!-- Related files -->
-					<div class="news-related news-related-files">
-						<h4><f:translate key="related-files" /></h4>
-						<ul>
-							<f:for each="{newsItem.relatedFiles}" as="relatedFile">
-								<li>
-									<span class="news-related-files-link">
-										<n:format.fileDownload file="uploads/tx_news/{relatedFile.file}" configuration="{settings.relatedFiles.download}">
-											<f:if condition="{relatedFile.title}">
-												<f:then>
-													{relatedFile.title}
-												</f:then>
-												<f:else>
-													{relatedFile.file}
-												</f:else>
-											</f:if>
-										</n:format.fileDownload>
-									</span>
-									<span class="hidden">. </span>
-									<span class="news-related-files-size">
-										<n:format.fileSize file="uploads/tx_news/{relatedFile.file}" format="{settings.relatedFiles.fileSizeLabels}" />
-									</span>
-								</li>
-							</f:for>
-						</ul>
-					</div>
-				</f:if>
-
-				<f:if condition="{newsItem.relatedLinks}">
-					<!-- Related links -->
-					<div class="news-related news-related-links">
-						<h4><f:translate key="related-links" /></h4>
-						<ul>
-							<f:for each="{newsItem.relatedLinks}" as="relatedLink">
-								<li>
-									<f:link.page pageUid="{relatedLink.uri}">{relatedLink.title}</f:link.page>
-								</li>
-							</f:for>
-						</ul>
-					</div>
-				</f:if>
+				
 			</div>
 		</f:then>
 		<f:else>

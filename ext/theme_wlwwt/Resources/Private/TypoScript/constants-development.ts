@@ -30,6 +30,7 @@ plugin.theme_configuration.extensions.news.latest {
 	startingpoint = 10
 	cropMaxCharacters = 120
 }
+plugin.theme_configuration.extensions.news.opengraph.site_name = wlwwt - TYPO3, Magento, Shopware aus Passau
 
 # **********************************************************
 # Changes in styles
