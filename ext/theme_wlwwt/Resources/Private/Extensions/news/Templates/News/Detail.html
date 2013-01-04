@@ -17,36 +17,19 @@
 				</f:if>
 				<f:render partial="Detail/Opengraph" arguments="{newsItem: newsItem, settings:settings}"/>
 			</n:format.nothing>
-			<div class="row">
-            
-                            <div class="slider-unit">
-                                <f:if condition="{settings.backPid}">
-                                    <!-- Link Back -->
-                                     <div class="span1">
-                                        <div class="slider-control  hidden-phone">
-                                               <f:link.page pageUid="{settings.backPid}">
-                                                       <f:translate key="LLL:EXT:theme_wlwwt/Resources/Private/Language/locallang.xml:back-sign" />
-                                               </f:link.page>
-                                       </div>
-                                     </div>
-                                </f:if>
-
-                                 <div class="span11">
-                                     <div class="row pull-center  hidden-phone">
-                                        <f:render partial="Detail/MediaContainer" arguments="{media: newsItem.media, settings:settings}"/>
-                                     </div>
-                                     <div class="row pull-center">
-                                          <h1>{newsItem.title}</h1>
-                                          <f:if condition="{newsItem.teaser}">
-                                          <h3>{newsItem.teaser}</h3>
-                                          </f:if>
-                                     </div>
-                                 </div>
-
+			<div class="row pull-center hidden-phone">
+                            <div class="span12">
+                                <f:render partial="Detail/MediaContainer" arguments="{media: newsItem.media, settings:settings}"/>
                             </div>
-
                         </div>
-                    
+			<div class="row pull-center">
+                            <div class="span12">
+                                <h1>{newsItem.title}</h1>
+                                <f:if condition="{newsItem.teaser}">
+                                <h3>{newsItem.teaser}</h3>
+                                </f:if>
+                            </div>
+                        </div>                   
                         <hr>
                     
                         <div class="row">
@@ -64,14 +47,6 @@
                                                     <li><f:link.email email="{f:translate(key:'LLL:EXT:theme_wlwwt/Resources/Private/Language/locallang.xml:contact-email')}"><f:translate key="LLL:EXT:theme_wlwwt/Resources/Private/Language/locallang.xml:contact-email" /></f:link.email></li>
                                                 </ul>
                                             </div>
-                                            <f:if condition="{settings.backPid}">
-                                                <!-- Link Back -->
-                                                <div class="news-backlink-wrap">
-                                                        <f:link.page pageUid="{settings.backPid}">
-                                                                <f:translate key="LLL:EXT:theme_wlwwt/Resources/Private/Language/locallang.xml:back-link" />
-                                                        </f:link.page>
-                                                </div>
-                                            </f:if>
                                         </div>
                                     </div>
                                     <div class="span3">
@@ -148,6 +123,19 @@
                                     </div>
                                 </div>
 
+                            </div>
+                        </div>
+                        
+                        <div class="row">
+                            <div class="span12">
+                                <f:if condition="{settings.backPid}">
+                                    <!-- Link Back -->
+                                    <div class="news-backlink-wrap">
+                                            <f:link.page pageUid="{settings.backPid}">
+                                                    <f:translate key="LLL:EXT:theme_wlwwt/Resources/Private/Language/locallang.xml:back-link" />
+                                            </f:link.page>
+                                    </div>
+                                </f:if>
                             </div>
                         </div>
 
