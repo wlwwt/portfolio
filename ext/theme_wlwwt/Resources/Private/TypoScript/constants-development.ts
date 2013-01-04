@@ -25,7 +25,7 @@ plugin.theme_configuration.extensions.indexed_search.form-target = 22
 # Constants for news
 # **********************************************************
 plugin.theme_configuration.extensions.news.latest {
-	limit = 5
+	limit = 3
 	detailPid = 33
 	startingpoint = 10
 	cropMaxCharacters = 120

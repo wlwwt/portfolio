@@ -1,0 +1,11 @@
+<f:if condition="{media}">
+	<!-- media files -->
+	<f:for each="{media}" as="mediaElement" iteration="interator">
+                <f:if condition="{mediaElement.type} == 0">
+                    <f:if condition="{interator.isFirst}">
+                        <f:render partial="List/MediaImage" arguments="{mediaElement: mediaElement, settings:settings}"/>
+                    </f:if>
+                        
+                </f:if>
+        </f:for>
+</f:if>

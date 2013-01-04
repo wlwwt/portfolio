@@ -11,24 +11,42 @@
 
 		<f:if condition="{settings.isLatest}">
 			<f:then>
-				<div class="news well news-latest-view">
-					<f:for each="{news}" as="newsItem">
-						<f:render partial="List/Item-latest" arguments="{newsItem: newsItem, settings:settings}"/>
-					</f:for>
-				</div>
+                                <div class="slider-unit hidden-tablet hidden-phone">
+                                    
+                                    <div class="span1">
+                                         <div class="slider-control">
+                                             <a href="#" onclick="slider.next();return false;">&lsaquo;</a>
+                                         </div>
+                                     </div>
+
+                                     <div class="span10">
+                                         <div id="slider" class="swipe">  
+                                            <div>
+                                                <f:for each="{news}" as="newsItem">
+                                                        <f:render partial="List/Item-latest" arguments="{newsItem: newsItem, settings:settings}"/>
+                                                </f:for>
+                                            </div>
+                                         </div>
+                                     </div>
+                                    
+                                    <div class="span1">
+                                        <div class="slider-control">
+                                            <a href="#" onclick="slider.next();return false;">&rsaquo;</a>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
 			</f:then>
 			<f:else>
-				<div class="news news-list-view">
-					<n:widget.paginate objects="{news}" as="paginatedNews" configuration="{settings.list.paginate}">
+                                <n:widget.paginate objects="{news}" as="paginatedNews" configuration="{settings.list.paginate}">
                                             
-                                            <ul class="thumbnails">
-                                                <f:for each="{paginatedNews}" as="newsItem">
-                                                    <f:render partial="List/Item-list" arguments="{newsItem: newsItem, settings:settings}"/>
-                                                </f:for>
-                                            </ul>	
-                                                
-					</n:widget.paginate>
-				</div>
+                                    <ul class="thumbnails">
+                                        <f:for each="{paginatedNews}" as="newsItem">
+                                            <f:render partial="List/Item-list" arguments="{newsItem: newsItem, settings:settings}"/>
+                                        </f:for>
+                                    </ul>	
+
+                                </n:widget.paginate>
 			</f:else>
 		</f:if>
 	</f:then>
