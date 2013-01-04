@@ -19,13 +19,14 @@ plugin.tx_news {
             widget.Tx_News_ViewHelpers_Widget_PaginateViewHelper.templateRootPath = EXT:theme_wlwwt/Resources/Private/Extensions/news/
 	}
         settings.cssFile >
+        settings.backPid = 2
 	settings.list.media.image {
             maxWidth = 630
             maxHeight = 200
 	}
         settings.detail.media.image {
-            maxWidth = 800
-            maxHeight = 600
+            maxWidth = 630
+            maxHeight = 300
         }
 
         settings.list.paginate.templatePath = typo3conf/ext/theme_wlwwt/Resources/Private/Extensions/news/ViewHelpers/Widget/Paginate/Index.html

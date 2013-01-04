@@ -32,6 +32,8 @@
 			<label index="contact-name">Wolfgang Freund</label>
 			<label index="contact-phone">Tel.: +49 170 29 18 949</label>
 			<label index="contact-email">wolfgang.freund@wlwwt.de</label>
+			<label index="back-sign"><![CDATA[ &lsaquo; ]]></label>
+			<label index="back-link"><![CDATA[ &lsaquo; zurück zur Übersicht ]]></label>
 		</languageKey>
 
 <!-- DE -->

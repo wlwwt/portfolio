@@ -8,7 +8,7 @@
 -->
 
 <f:section name="content">
-	<f:if condition="{newsItem}">
+        <f:if condition="{newsItem}">
 		<f:then>
 			<n:format.nothing>
 				<f:if condition="{newsItem.alternativeTitle}">
@@ -20,14 +20,18 @@
 			<div class="row">
             
                             <div class="slider-unit">
-
-                                <div class="span1">
-                                     <div class="slider-control  hidden-phone">
-                                         <a href="#">&lsaquo;</a>
+                                <f:if condition="{settings.backPid}">
+                                    <!-- Link Back -->
+                                     <div class="span1">
+                                        <div class="slider-control  hidden-phone">
+                                               <f:link.page pageUid="{settings.backPid}">
+                                                       <f:translate key="LLL:EXT:theme_wlwwt/Resources/Private/Language/locallang.xml:back-sign" />
+                                               </f:link.page>
+                                       </div>
                                      </div>
-                                 </div>
+                                </f:if>
 
-                                 <div class="span10">
+                                 <div class="span11">
                                      <div class="row pull-center  hidden-phone">
                                         <f:render partial="Detail/MediaContainer" arguments="{media: newsItem.media, settings:settings}"/>
                                      </div>
@@ -36,12 +40,6 @@
                                           <f:if condition="{newsItem.teaser}">
                                           <h3>{newsItem.teaser}</h3>
                                           </f:if>
-                                     </div>
-                                 </div>
-
-                                 <div class="span1">
-                                     <div class="slider-control  hidden-phone">
-                                         <a href="#">&rsaquo;</a>
                                      </div>
                                  </div>
 
@@ -66,6 +64,14 @@
                                                     <li><f:link.email email="{f:translate(key:'LLL:EXT:theme_wlwwt/Resources/Private/Language/locallang.xml:contact-email')}"><f:translate key="LLL:EXT:theme_wlwwt/Resources/Private/Language/locallang.xml:contact-email" /></f:link.email></li>
                                                 </ul>
                                             </div>
+                                            <f:if condition="{settings.backPid}">
+                                                <!-- Link Back -->
+                                                <div class="news-backlink-wrap">
+                                                        <f:link.page pageUid="{settings.backPid}">
+                                                                <f:translate key="LLL:EXT:theme_wlwwt/Resources/Private/Language/locallang.xml:back-link" />
+                                                        </f:link.page>
+                                                </div>
+                                            </f:if>
                                         </div>
                                     </div>
                                     <div class="span3">
@@ -144,15 +150,6 @@
 
                             </div>
                         </div>
-
-			<f:if condition="{settings.backPid}">
-				<!-- Link Back -->
-				<div class="news-backlink-wrap">
-					<f:link.page pageUid="{settings.backPid}">
-						<f:translate key="back-link" />
-					</f:link.page>
-				</div>
-			</f:if>
 
 		</f:then>
 		<f:else>
