@@ -20,8 +20,8 @@ plugin.tx_news {
 	}
         settings.cssFile >
 	settings.list.media.image {
-            maxWidth = 260
-            maxHeight = 150
+            maxWidth = 630
+            maxHeight = 200
 	}
 
         settings.list.paginate.templatePath = typo3conf/ext/theme_wlwwt/Resources/Private/Extensions/news/ViewHelpers/Widget/Paginate/Index.html
@@ -29,6 +29,7 @@ plugin.tx_news {
 	settings.list.paginate.insertAbove = 0
         settings.list.paginate.itemsPerPage = 6
         settings.opengraph.site_name = {$plugin.theme_configuration.extensions.news.opengraph.site_name}
+        settings.detail.showSocialShareButtons = 1
 
 	settings.list.rss.channel {
             title = wlwwt Referenzen

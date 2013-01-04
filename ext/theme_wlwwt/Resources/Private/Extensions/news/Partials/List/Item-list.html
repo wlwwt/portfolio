@@ -3,7 +3,7 @@
 	=====================
 		Partials/List/Item.html
 -->
-<li class="span3">
+<li class="span6">
     <div class="thumbnail">
      
     <n:link newsItem="{newsItem}" settings="{settings}">
@@ -45,11 +45,28 @@
                     </f:if>
             </f:else>
         </f:if>    
+        
+         <div class="caption">
+            <div class="padding">
+                <p>{newsItem.title}</p>
+                <f:if condition="{newsItem.tags}">
+                   <p class="benefits"><i class="icon-tags icon-white"></i>&nbsp;<f:translate key="LLL:EXT:theme_wlwwt/Resources/Private/Language/locallang.xml:benefits" />
+                    <f:for each="{newsItem.tags}" as="tag" iteration="interator">
+                           <f:if condition="{interator.isLast}">
+                               <f:then>
+                                   {tag.title}
+                               </f:then>
+                               <f:else>
+                                   {tag.title},
+                               </f:else>
+                           </f:if>
 
-        <div class="caption">
-            <p class="thumbnail-title">{newsItem.title}</p>
+                       </f:for>
+                   </p>
+               </f:if>
+            </div>
         </div>
-
+        
     </n:link>
            
     </div>

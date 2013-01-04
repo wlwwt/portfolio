@@ -46,3 +46,14 @@ lib.general.print-page {
             wrap = <a href="javascript:self.print()"><i class="icon-print"></i>&nbsp;|</a>
 	}
 }
+#-------------------------------------------------------------------------------
+#	GENERAL: Partner Link
+#-------------------------------------------------------------------------------
+lib.general.partner = COA
+lib.general.partner {
+        10 = TEXT
+	10 {	          
+            data = LLL:EXT:theme_wlwwt/Resources/Private/Language/locallang.xml:partner-logo          
+            wrap = <img src="|" alt="TYPO3, Shopware, Magento" />
+	}
+}

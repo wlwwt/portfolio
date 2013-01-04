@@ -70,42 +70,40 @@
                                     </div>
                                     <div class="span3">
                                         
-                                        <div class="meta">
+                                        <f:if condition="{newsItem.tags}">
+                                         <div class="meta">
                                             <p><i class="icon-tags"></i>&nbsp;<f:translate key="LLL:EXT:theme_wlwwt/Resources/Private/Language/locallang.xml:benefits" /></p>
                                             <ul>
-                                                <f:if condition="{newsItem.tags}">
-                                                <!-- Related tags -->
-                                                    <li>
-                                                        <f:for each="{newsItem.tags}" as="tag" iteration="interator">
-                                                            <f:if condition="{interator.isLast}">
-                                                                <f:then>
-                                                                    {tag.title}
-                                                                </f:then>
-                                                                <f:else>
-                                                                    {tag.title},
-                                                                </f:else>
-                                                            </f:if>
+                                            <li>
+                                                <f:for each="{newsItem.tags}" as="tag" iteration="interator">
+                                                    <f:if condition="{interator.isLast}">
+                                                        <f:then>
+                                                            {tag.title}
+                                                        </f:then>
+                                                        <f:else>
+                                                            {tag.title},
+                                                        </f:else>
+                                                    </f:if>
 
-                                                        </f:for>
-                                                    </li>
-                                                </f:if>
+                                                </f:for>
+                                            </li>
                                             </ul>
                                         </div>
-                                        
+                                        </f:if>
+                                       
+                                        <f:if condition="{newsItem.relatedLinks}">
                                         <div class="meta">
                                             <p><i class="icon-home"></i>&nbsp;<f:translate key="LLL:EXT:theme_wlwwt/Resources/Private/Language/locallang.xml:visit-page" /></p>
                                             <ul>
-                                            <f:if condition="{newsItem.relatedLinks}">
-                                                <!-- Related links -->
-                                                <f:for each="{newsItem.relatedLinks}" as="relatedLink">
-                                                    <li>
-                                                            <f:link.page pageUid="{relatedLink.uri}">{relatedLink.title}</f:link.page>
-                                                    </li>
-                                                </f:for>
-                                            </f:if>
+                                            <f:for each="{newsItem.relatedLinks}" as="relatedLink">
+                                                <li>
+                                                        <f:link.page pageUid="{relatedLink.uri}">{relatedLink.title}</f:link.page>
+                                                </li>
+                                            </f:for>
                                             </ul>
                                         </div>
-                                        
+                                        </f:if>
+                                       
                                         <f:if condition="{newsItem.relatedFiles}">
                                             <!-- Related files -->
                                             <div class="meta">
@@ -129,23 +127,23 @@
                                                 </ul>
                                             </div>
                                         </f:if>
-
-                                        <div class="meta">
-                                          <p><i class="icon-share"></i>&nbsp;<f:translate key="LLL:EXT:theme_wlwwt/Resources/Private/Language/locallang.xml:download" /></p>
-                                          <ul>
-                                              <li>
-                                                <f:render partial="Detail/Addthis" arguments="{newsItem: newsItem, settings:settings}"/> 
-                                              </li>
-                                          </ul>
-
-                                        </div>
-
+                                        
+                                        <f:if condition="{settings.detail.showSocialShareButtons}">
+                                            <div class="meta">
+                                                <p><i class="icon-share"></i>&nbsp;<f:translate key="LLL:EXT:theme_wlwwt/Resources/Private/Language/locallang.xml:social-media" /></p>
+                                                <ul>
+                                                    <li>
+                                                    <f:render partial="Detail/Addthis" arguments="{newsItem: newsItem, settings:settings}"/> 
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </f:if>
+    
                                     </div>
                                 </div>
 
                             </div>
                         </div>
-
 
 			<f:if condition="{settings.backPid}">
 				<!-- Link Back -->
@@ -156,30 +154,6 @@
 				</div>
 			</f:if>
 
-			<!-- related things -->
-			<div class="news-related-wrap">
-
-				<f:if condition="{newsItem.relatedSorted}">
-					<!-- Related news records -->
-					<div class="news-related news-related-news">
-						<h4><f:translate key="related-news" /></h4>
-						<ul>
-							<f:for each="{newsItem.relatedSorted}" as="related">
-								<li>
-									<span class="news-related-news-date"><f:format.date format="d.m.Y">{related.datetime}</f:format.date></span>
-									<span class="hidden">. </span>
-									<n:link newsItem="{related}" settings="{settings}">
-										{related.title}
-									</n:link>
-								</li>
-
-							</f:for>
-						</ul>
-					</div>
-				</f:if>
-
-				
-			</div>
 		</f:then>
 		<f:else>
 

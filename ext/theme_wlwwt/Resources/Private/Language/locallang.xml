@@ -23,6 +23,7 @@
 			<!-- Frontend -->
 			<label index="search-placeholder">Ich suche nach ...</label>
 			<label index="print-page">Seite drucken</label>
+			<label index="partner-logo">typo3conf/ext/theme_wlwwt/Resources/Public/Template/img/partner-logos.jpg</label>
 			<label index="visit-page">Besuchen Sie die Seite</label>
 			<label index="benefits">Leistungen</label>
 			<label index="download">Download</label>

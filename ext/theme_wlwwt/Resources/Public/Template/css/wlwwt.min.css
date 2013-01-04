@@ -508,11 +508,14 @@ footer>a{text-decoration:underline;}
 .thumbnails:after{clear:both;}
 .row-fluid .thumbnails{margin-left:0;}
 .thumbnails>li{float:left;margin-bottom:27px;margin-left:20px;}
-.thumbnail{display:block;line-height:27px;}
-.thumbnail>a>img{display:block;max-width:100%;margin-left:auto;margin-right:auto;border:5px solid #FFF;}
-.thumbnail>a img:hover{border-color:#f38630;}
-.thumbnail .caption{text-align:center;}
-p.thumbnail-title{font-familiy:Georgia,"Times New Roman",Times,serif;font-size:18px;line-height:27px;}
+.thumbnail{display:block;line-height:27px;position:relative;}
+.thumbnail>a>img{display:block;max-width:100%;margin-left:auto;margin-right:auto;}
+.thumbnail>a>.caption{background:transparent url('../img/portfolio.png') repeat left top;color:#fff;position:absolute;bottom:0;left:0;height:100%;width:100%;display:none;}
+.thumbnail>a>.caption>.padding{padding:15px;}
+.thumbnail>a>.caption>.padding>.lead{font-wight:bold;}
+.thumbnail>a>.caption>.padding>.benefits{font-size:14px;font-family:Georgia,"Times New Roman",Times,serif;line-height:16px;}
+.portfolio{position:relative;padding:0;margin:0;}
+.portfolio>span.caption{background:#000;color:#fff;position:absolute;bottom:0;left:0;width:100%;height:100%;padding:10px;}
 .slider-control{font-size:126px;line-height:189px;text-shadow:0 1px 1px rgba(0, 0, 0, 0.4);}
 .slider-control>a{outline:none;text-decoration:none;font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;}
 .slider-control>a:hover{text-decoration:none;}
