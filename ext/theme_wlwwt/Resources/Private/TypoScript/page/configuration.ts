@@ -37,7 +37,7 @@ config {
 	simulateStaticDocuments = 0
 	baseURL = {$plugin.theme_configuration.url}
 	absRefPrefix = {$plugin.theme_configuration.url}
-	tx_realurl_enable = 0
+	tx_realurl_enable = {$plugin.theme_configuration.realurl}
 	prefixLocalAnchors = all
 	prefixLocalAnchors >
 

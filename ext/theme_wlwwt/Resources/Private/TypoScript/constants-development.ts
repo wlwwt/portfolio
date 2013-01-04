@@ -36,3 +36,8 @@ plugin.theme_configuration.extensions.news.opengraph.site_name = wlwwt - TYPO3, 
 # Changes in styles
 # **********************************************************
 styles.content.imgtext.maxW = 1030
+
+# **********************************************************
+# Changes in styles
+# **********************************************************
+plugin.theme_configuration.realurl = 0
