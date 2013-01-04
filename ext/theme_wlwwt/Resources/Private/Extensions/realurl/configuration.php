@@ -58,7 +58,7 @@ $TYPO3_CONF_VARS['EXTCONF']['realurl']['_DEFAULT'] = array(
 			array(
 				'GETvar' => 'tx_news_pi1[controller]',
 				'valueMap' => array(
-					'News' => '',
+					'Referenz' => '',
 				),
 				'noMatch' => 'bypass'
 			),
