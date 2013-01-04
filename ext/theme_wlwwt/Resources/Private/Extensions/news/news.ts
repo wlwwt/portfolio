@@ -23,6 +23,10 @@ plugin.tx_news {
             maxWidth = 630
             maxHeight = 200
 	}
+        settings.detail.media.image {
+            maxWidth = 800
+            maxHeight = 600
+        }
 
         settings.list.paginate.templatePath = typo3conf/ext/theme_wlwwt/Resources/Private/Extensions/news/ViewHelpers/Widget/Paginate/Index.html
 	settings.cropMaxCharacters = 300
