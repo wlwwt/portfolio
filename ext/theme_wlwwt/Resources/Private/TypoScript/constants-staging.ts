@@ -8,10 +8,10 @@
 
 
 # **********************************************************
-# Basic Constants of the DEVELOPMENT mode
+# Basic Constants of the PRODUCTION mode
 # **********************************************************
 
-plugin.theme_configuration.url = http://localhost/wlwwt/
+plugin.theme_configuration.url = http://192.168.2.200/wlwwt/
 plugin.theme_configuration.general.logo.link = 1
 plugin.theme_configuration.navigation_header = 2,3,4,5
 plugin.theme_configuration.navigation_footer = 7
@@ -25,7 +25,7 @@ plugin.theme_configuration.extensions.indexed_search.form-target = 22
 # Constants for news
 # **********************************************************
 plugin.theme_configuration.extensions.news.latest {
-	limit = 3
+	limit = 5
 	detailPid = 33
 	startingpoint = 10
 	cropMaxCharacters = 120
@@ -40,6 +40,4 @@ styles.content.imgtext.maxW = 1030
 # **********************************************************
 # Changes in styles
 # **********************************************************
-plugin.theme_configuration.realurl = 0
-
-
+plugin.theme_configuration.realurl = 1

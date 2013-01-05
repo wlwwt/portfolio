@@ -7,6 +7,7 @@ if (!defined('TYPO3_MODE')) {
  * Embed TypoScript
  */
 t3lib_extMgm::addStaticFile($_EXTKEY, 'Configuration/TypoScript/Development', 'Theme EXT:"' . $_EXTKEY . '" DEVELOPMENT');
+t3lib_extMgm::addStaticFile($_EXTKEY, 'Configuration/TypoScript/Staging', 'Theme EXT:"' . $_EXTKEY . '" STAGING');
 t3lib_extMgm::addStaticFile($_EXTKEY, 'Configuration/TypoScript/Production', 'Theme EXT:"' . $_EXTKEY . '" PRODUCTION');
 
 /***************
