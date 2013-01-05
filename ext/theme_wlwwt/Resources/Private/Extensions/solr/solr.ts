@@ -19,8 +19,8 @@
 #<form class="navbar-search pull-right">
 #<input class="span4" type="text" placeholder="Suchbegriff">
 #</form>
-lib.extensions.indexed_search_box = COA
-lib.extensions.indexed_search_box {
+lib.extensions.solr_search_box = COA
+lib.extensions.solr_search_box {
 
 	# Open form tag and set URL to target page
 	10 = TEXT
@@ -41,4 +41,19 @@ lib.extensions.indexed_search_box {
 			</form>
 		)
 	}
+}
+
+
+# enables solr-indexing
+config.index_enable = 1
+plugin.tx_solr.solr {
+    host = {$plugin.tx_solr.solr.host}
+    port = {$plugin.tx_solr.solr.port}
+    path = {$plugin.tx_solr.solr.path}
+    enableDebugMode = {$plugin.tx_solr.enableDebugMode}
+}
+plugin.tx_solr.search {
+    faceting = {$plugin.tx_solr.search.faceting}
+
+    results.resultsHighlighting = {$plugin.tx_solr.search.results.resultsHighlighting}
 }
