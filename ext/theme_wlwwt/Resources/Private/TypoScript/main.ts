@@ -18,6 +18,7 @@
 <INCLUDE_TYPOSCRIPT: source="FILE:EXT:theme_wlwwt/Resources/Private/TypoScript/page/page.ts">
 <INCLUDE_TYPOSCRIPT: source="FILE:EXT:theme_wlwwt/Resources/Private/TypoScript/page/configuration.ts">
 <INCLUDE_TYPOSCRIPT: source="FILE:EXT:theme_wlwwt/Resources/Private/TypoScript/page/configuration_language.ts">
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:theme_wlwwt/Resources/Private/TypoScript/page/tracking.ts">
 <INCLUDE_TYPOSCRIPT: source="FILE:EXT:theme_wlwwt/Resources/Private/TypoScript/page/seo.ts">
 
 

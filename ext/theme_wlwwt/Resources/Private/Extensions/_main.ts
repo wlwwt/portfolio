@@ -11,5 +11,5 @@
 # **********************************************************
 
 <INCLUDE_TYPOSCRIPT: source="FILE:EXT:theme_wlwwt/Resources/Private/Extensions/extbase.ts">
-<INCLUDE_TYPOSCRIPT: source="FILE:EXT:theme_wlwwt/Resources/Private/Extensions/indexed_search.ts">
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:theme_wlwwt/Resources/Private/Extensions/indexed_search/indexed_search.ts">
 <INCLUDE_TYPOSCRIPT: source="FILE:EXT:theme_wlwwt/Resources/Private/Extensions/news/news.ts">

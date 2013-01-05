@@ -41,3 +41,8 @@ styles.content.imgtext.maxW = 1030
 # Changes in styles
 # **********************************************************
 plugin.theme_configuration.realurl = 1
+
+# **********************************************************
+# Google Analytics Code
+# **********************************************************
+plugin.theme_configuration.realurl = 1
