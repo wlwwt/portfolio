@@ -47,9 +47,9 @@ lib.extensions.solr_search_box {
 # enables solr-indexing
 config.index_enable = 1
 plugin.tx_solr.solr {
-    host = {$plugin.tx_solr.solr.host}
-    port = {$plugin.tx_solr.solr.port}
-    path = {$plugin.tx_solr.solr.path}
+    host = http://192.168.2.200
+    port = 8080
+    path = solr/main
     enableDebugMode = {$plugin.tx_solr.enableDebugMode}
 }
 plugin.tx_solr.search {
