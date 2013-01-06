@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2013-01-06T18:59:32Z" product-name="wfmeta">
+		<header/>
+		<body>
+			
+            
+			<trans-unit id="title.description">
+				<source>title</source>
+			</trans-unit>
+			<trans-unit id="portfolios.description">
+				<source>portfolios</source>
+			</trans-unit>
+			<trans-unit id="systems.description">
+				<source>systems</source>
+			</trans-unit>
+			<trans-unit id="contact.description">
+				<source>contact</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

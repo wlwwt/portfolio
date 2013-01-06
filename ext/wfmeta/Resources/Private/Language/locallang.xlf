@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2013-01-06T18:59:32Z" product-name="wfmeta">
+		<header/>
+		<body>
+			
+			
+			<trans-unit id="tx_wfmeta_domain_model_column">
+				<source>Column</source>
+			</trans-unit>
+			<trans-unit id="tx_wfmeta_domain_model_column.title">
+				<source>title</source>
+			</trans-unit>
+			<trans-unit id="tx_wfmeta_domain_model_column.portfolios">
+				<source>portfolios</source>
+			</trans-unit>
+			<trans-unit id="tx_wfmeta_domain_model_column.systems">
+				<source>systems</source>
+			</trans-unit>
+			<trans-unit id="tx_wfmeta_domain_model_column.contact">
+				<source>contact</source>
+			</trans-unit>
+			
+			<trans-unit id="tx_wfmeta_domain_model_portfolio">
+				<source>Portfolio</source>
+			</trans-unit>
+			<trans-unit id="tx_wfmeta_domain_model_portfolio.title">
+				<source>title</source>
+			</trans-unit>
+			<trans-unit id="tx_wfmeta_domain_model_portfolio.link">
+				<source>link</source>
+			</trans-unit>
+			
+			<trans-unit id="tx_wfmeta_domain_model_system">
+				<source>System</source>
+			</trans-unit>
+			<trans-unit id="tx_wfmeta_domain_model_system.title">
+				<source>title</source>
+			</trans-unit>
+			<trans-unit id="tx_wfmeta_domain_model_system.link">
+				<source>link</source>
+			</trans-unit>
+			
+			<trans-unit id="tx_wfmeta_domain_model_contact">
+				<source>Contact</source>
+			</trans-unit>
+			<trans-unit id="tx_wfmeta_domain_model_contact.title">
+				<source>title</source>
+			</trans-unit>
+			<trans-unit id="tx_wfmeta_domain_model_contact.phone">
+				<source>phone</source>
+			</trans-unit>
+			<trans-unit id="tx_wfmeta_domain_model_contact.email">
+				<source>email</source>
+			</trans-unit>
+			
+		</body>
+	</file>
+</xliff>

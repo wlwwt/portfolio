@@ -1,0 +1,39 @@
+plugin.tx_wfmeta {
+	view {
+		templateRootPath = {$plugin.tx_wfmeta.view.templateRootPath}
+		partialRootPath = {$plugin.tx_wfmeta.view.partialRootPath}
+		layoutRootPath = {$plugin.tx_wfmeta.view.layoutRootPath}
+	}
+	persistence {
+		storagePid = {$plugin.tx_wfmeta.persistence.storagePid}
+	}
+	features {
+		# uncomment the following line to enable the new Property Mapper.
+		# rewrittenPropertyMapper = 1
+	}
+}
+
+plugin.tx_wfmeta._CSS_DEFAULT_STYLE (
+	textarea.f3-form-error {
+		background-color:#FF9F9F;
+		border: 1px #FF0000 solid;
+	}
+
+	input.f3-form-error {
+		background-color:#FF9F9F;
+		border: 1px #FF0000 solid;
+	}
+
+	.tx-wfmeta table {
+		border-collapse:separate;
+		border-spacing:10px;
+	}
+
+	.tx-wfmeta table th {
+		font-weight:bold;
+	}
+
+	.tx-wfmeta table td {
+		vertical-align:top;
+	}
+)
