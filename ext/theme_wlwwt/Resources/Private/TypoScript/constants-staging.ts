@@ -41,3 +41,10 @@ styles.content.imgtext.maxW = 1030
 # Changes in styles
 # **********************************************************
 plugin.theme_configuration.realurl = 1
+
+# **********************************************************
+# solr config
+# **********************************************************
+plugin.tx_solr.solr.host = localhost
+plugin.tx_solr.solr.port = 8080
+plugin.tx_solr.solr.path = /solr/main

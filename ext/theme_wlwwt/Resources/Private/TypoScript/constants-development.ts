@@ -42,4 +42,9 @@ styles.content.imgtext.maxW = 1030
 # **********************************************************
 plugin.theme_configuration.realurl = 0
 
-
+# **********************************************************
+# solr config
+# **********************************************************
+plugin.tx_solr.solr.host = 192.168.2.200
+plugin.tx_solr.solr.port = 8080
+plugin.tx_solr.solr.path = /solr/main
