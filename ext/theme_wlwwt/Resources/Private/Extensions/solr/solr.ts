@@ -25,24 +25,26 @@ lib.extensions.solr_search_box {
 	# Open form tag and set URL to target page
 	10 = TEXT
 	10 {
-		wrap = <form class="navbar-search pull-right" action="|" method="post">
+		wrap = <form class="navbar-search pull-right" action="|" method="get">
 		typolink {
 			parameter = {$plugin.theme_configuration.extensions.indexed_search.form-target}
 			returnLast = url
+                        additionalParams = tx_solr[q]
+                        additionalParams.insertData = 1
 		}
 	}
 
 	# Add rest of template
 	20 = TEXT
 	20 {
-		insertData = 1
+		
+                insertData = 1
 		value (
-			<input class="span4" type="text" placeholder="{LLL:EXT:theme_wlwwt/Resources/Private/Language/locallang.xml:search-placeholder}">
+			<input class="span4" name="tx_solr[q]" type="text" placeholder="{LLL:EXT:theme_wlwwt/Resources/Private/Language/locallang.xml:search-placeholder}">
 			</form>
 		)
 	}
 }
-
 
 # enables solr-indexing
 config.index_enable = 1

@@ -113,12 +113,12 @@ class tx_pagebrowse_pi1 extends tslib_pibase {
 			}
 		}
 
-		if (t3lib_div::testInt($this->conf['pagesBefore'])) {
-			$this->pagesBefore = intval($this->conf['pagesBefore']);
-		}
-		if (t3lib_div::testInt($this->conf['pagesAfter'])) {
-			$this->pagesAfter = intval($this->conf['pagesAfter']);
-		}
+//		if (t3lib_div::testInt($this->conf['pagesBefore'])) {
+//			$this->pagesBefore = intval($this->conf['pagesBefore']);
+//		}
+//		if (t3lib_div::testInt($this->conf['pagesAfter'])) {
+//			$this->pagesAfter = intval($this->conf['pagesAfter']);
+//		}
 
 		$this->adjustForForcedNumberOfLinks();
 
