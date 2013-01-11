@@ -23,10 +23,12 @@
                                     <f:for each="{column.systems}" as="system" iteration="iterator">
                                             <f:if condition="{iterator.isLast}">
                                                     <f:then>
-                                                        <f:link.page pageUid="{system.link}">{system.title}</f:link.page>
+                                                        <!-- <f:link.page pageUid="{system.link}">{system.title}</f:link.page> -->
+                                                        {system.title}
                                                     </f:then>
                                                     <f:else>
-                                                        <f:link.page pageUid="{system.link}">{system.title}</f:link.page>, 
+                                                        <!-- <f:link.page pageUid="{system.link}">{system.title}</f:link.page>, -->
+                                                        {system.title}, 
                                                     </f:else>
                                             </f:if>
                                     </f:for>
