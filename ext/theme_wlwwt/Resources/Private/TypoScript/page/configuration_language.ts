@@ -16,8 +16,7 @@
 # Default language
 config {
 	sys_language_uid = 0
-	language = en
-	locale_all = en
-	htmlTag_langKey = en
+	language = de
+	locale_all = de_DE
+	htmlTag_langKey = de
 }
-plugin.tx_indexedsearch._DEFAULT_PI_VARS.lang = 0

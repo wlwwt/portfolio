@@ -48,18 +48,8 @@ class ColumnController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionControlle
 	 * @return void
 	 */
 	public function listAction() {
-		$columns = $this->columnRepository->findAll();
-		$this->view->assign('columns', $columns);
-	}
-
-	/**
-	 * action show
-	 *
-	 * @param \WLWWT\Wfmeta\Domain\Model\Column $column
-	 * @return void
-	 */
-	public function showAction(\WLWWT\Wfmeta\Domain\Model\Column $column) {
-		$this->view->assign('column', $column);
+                $column = $this->columnRepository->findByUid($this->settings['columnId']);
+                $this->view->assign('column', $column);
 	}
 
 }

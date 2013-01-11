@@ -1,0 +1,41 @@
+<T3DataStructure>
+	<meta>
+		<langDisable>1</langDisable>
+	</meta>
+
+	<sheets>
+		<!--
+			################################
+			  SHEET General Settings
+			################################
+		-->
+		<sDEF>
+			<ROOT>
+				<TCEforms>
+					<sheetTitle>LLL:EXT:wfmeta/Resources/Private/Language/locallang_db.xlf:flexform.settings</sheetTitle>
+				</TCEforms>
+				<type>array</type>
+				<el>
+					<!-- Column UID -->
+					<settings.columnId>
+						<TCEforms>
+							<label>LLL:EXT:wfmeta/Resources/Private/Language/locallang_db.xlf:flexform.settings.columnid</label>
+							<config>
+								<type>select</type>
+								
+								<foreign_table>tx_wfmeta_domain_model_column</foreign_table>
+								<!-- <foreign_table_where> ORDER BY tx_wfmeta_domain_model_column.sorting</foreign_table_where> -->
+								<size>1</size>
+								<autoSizeMax>1</autoSizeMax>
+								<minitems>1</minitems>
+								<maxitems>1</maxitems>
+							</config>
+						</TCEforms>
+					</settings.columnId>
+
+				</el>
+			</ROOT>
+		</sDEF>
+
+	</sheets>
+</T3DataStructure>

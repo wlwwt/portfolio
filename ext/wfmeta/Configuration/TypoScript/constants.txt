@@ -9,6 +9,10 @@ plugin.tx_wfmeta {
 	}
 	persistence {
 		# cat=plugin.tx_wfmeta//a; type=string; label=Default storage PID
-		storagePid =
+		storagePid = 36
 	}
+        settings {
+                # cat=plugin.tx_wfmeta//a; type=string; label=Default column UID
+		columnId = 
+        }
 }

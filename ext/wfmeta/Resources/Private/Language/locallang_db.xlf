@@ -56,8 +56,13 @@
 			<trans-unit id="tx_wfmeta_domain_model_contact.email">
 				<source>Email</source>
 			</trans-unit>
-			
-			
+                        
+			<trans-unit id="flexform.settings">
+				<source>Settings</source>
+			</trans-unit>
+			<trans-unit id="flexform.settings.columnid">
+				<source>Column</source>
+			</trans-unit>
 		</body>
 	</file>
 </xliff>

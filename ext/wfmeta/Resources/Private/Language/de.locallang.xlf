@@ -1,23 +1,20 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <xliff version="1.0">
-	<file source-language="en" datatype="plaintext" original="messages" date="2013-01-06T18:59:32Z" product-name="wfmeta">
+	<file source-language="en" target-language="de" datatype="plaintext" original="messages" date="2013-01-06T18:59:32Z" product-name="wfmeta">
 		<header/>
 		<body>
 			
-			<trans-unit id="tx_wfmeta_domain_model_column.no-meta">
-				<source>No metadata found. Check settings['columnId']</source>
-			</trans-unit>
 			<trans-unit id="tx_wfmeta_domain_model_column.references">
-				<source>References</source>
+				<target>Referenzen</target>
 			</trans-unit>
 			<trans-unit id="tx_wfmeta_domain_model_column.systems">
-				<source>Systems</source>
+				<target>Systeme</target>
 			</trans-unit>
 			<trans-unit id="tx_wfmeta_domain_model_column.contact">
-				<source>Feel free to contact us</source>
+				<target>Kontaktieren Sie uns</target>
 			</trans-unit>
 			<trans-unit id="tx_wfmeta_domain_model_contact.phone">
-				<source>Phone:</source>
+				<target>Tel.:</target>
 			</trans-unit>
 						
 		</body>

@@ -43,8 +43,8 @@ config {
 
 	# Spam
 	spamProtectEmailAddresses = -2
-	spamProtectEmailAddresses_atSubst = <script type="text/javascript">obscureMid();</script>
-	spamProtectEmailAddresses_lastDotSubst = <script type="text/javascript">obscureEnd();</script>
+	spamProtectEmailAddresses_atSubst = (at)
+	spamProtectEmailAddresses_lastDotSubst = .
 
 	# indexed Search
 	index_enable = 1
