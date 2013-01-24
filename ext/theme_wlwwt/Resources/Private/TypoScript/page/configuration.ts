@@ -67,7 +67,7 @@ config {
 	#stat_typeNumList = 0
 
         headerComment (
-Realisation: wlwwt UG (haftungsbeschränkt)
+Realisation: wlwwt - TYPO3 aus Passau
 Kontakt: http://www.wlwwt.de / Tel. +49 170 29 18 949 / wolfgang.freund@wlwwt.de
 )
 
