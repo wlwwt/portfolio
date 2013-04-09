@@ -17,6 +17,7 @@ page.20 {
 
         var _gaq = _gaq || [];
         _gaq.push(['_setAccount', 'UA-37436368-1']);
+		_gaq.push (['_gat._anonymizeIp']);
         _gaq.push(['_trackPageview']);
 
         (function() {
