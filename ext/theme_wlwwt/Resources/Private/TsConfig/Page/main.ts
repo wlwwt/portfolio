@@ -63,7 +63,7 @@ TCEFORM.tt_content {
 
 	# Erzeuge bei Elemente Einträge im Layoutdropdown für DIVs
 	layout.altLabels {
-		1 = Box
+		1 = Metabox
 		2 = Box News
 		3 = Box Download
 	}
