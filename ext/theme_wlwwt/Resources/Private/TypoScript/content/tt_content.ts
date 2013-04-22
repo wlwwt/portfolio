@@ -47,7 +47,7 @@ tt_content {
 		default.value = |
 
 		1 = TEXT
-		1.value = <div class="box">|</div>
+		1.value = <div class="meta">|</div>
 		2 = TEXT
 		2.value = <div class="box news">|</div>
 		3 = TEXT
