@@ -486,7 +486,7 @@ button.btn.btn-mini,input[type="submit"].btn.btn-mini{*padding-top:1px;*padding-
 .contact>ul>li{margin-bottom:0;line-height:27px;}
 .contact>ul>li>a{font-style:italic;text-decoration:underline;}
 .author{background-color:#000000;color:#ffffff;padding:5px;line-height:54px;}
-.meta{font-familiy:Georgia,"Times New Roman",Times,serif;font-size:14px;line-height:8px;margin:27px 0 35.1px 0;}
+.meta{font-familiy:Georgia,"Times New Roman",Times,serif;font-size:14px;line-height:16px;margin:27px 0 35.1px 0;}
 .meta>ul{list-style:none;margin-left:10px;}
 .meta>ul>li{margin-bottom:0;line-height:16px;}
 .meta>ul>li>a{font-style:italic;text-decoration:underline;}
