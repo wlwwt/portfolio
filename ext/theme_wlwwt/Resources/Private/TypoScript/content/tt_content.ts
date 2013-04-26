@@ -155,11 +155,6 @@ lib.stdheader.3.headerClass.cObject.25 {
 # !!! still in alpha/beta !!!
 tt_content.mailform.20 {
   stdWrap.wrap >
-  postProcessor.1.messages.success = TEXT
-  postProcessor.1.messages.success {
-    value = <strong>Thanks for your email</strong><br />I will try to responst as soon as possible!
-    wrap = <div class="alert alert-success">|</div>
-  }
 
   layout {
     form (
