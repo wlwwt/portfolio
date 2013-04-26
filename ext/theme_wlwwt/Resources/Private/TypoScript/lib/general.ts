@@ -40,11 +40,28 @@ lib.general.copyright {
 # <a href="javascript:self.print()"><i class="icon-print"></i>&nbsp;Seite drucken</a> 
 lib.general.print-page = COA
 lib.general.print-page {
-        10 = TEXT
-	10 {	
+	10 = TEXT
+	10 {
+		wrap = |
+		data = LLL:EXT:theme_wlwwt/Resources/Private/Language/locallang.xml:toplink
+		typolink {
+			wrap = <i class="icon-arrow-up"></i>&nbsp;|&nbsp;&#124;&nbsp;
+			parameter.dataWrap = {getIndpEnv:TYPO3_REQUEST_URL}#top
+		}
+	}
+	20 = TEXT
+	20 {	
             data = LLL:EXT:theme_wlwwt/Resources/Private/Language/locallang.xml:print-page
             wrap = <a href="javascript:self.print()"><i class="icon-print"></i>&nbsp;|</a>
 	}
+}
+
+#-------------------------------------------------------------------------------
+#	NAVIGATION: Footer (right)
+#-------------------------------------------------------------------------------
+lib.navigation.footer.top = TEXT
+lib.navigation.footer.top {
+	
 }
 #-------------------------------------------------------------------------------
 #	GENERAL: Partner Link
