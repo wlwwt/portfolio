@@ -7,3 +7,6 @@
 [submodule "ext/solr"]
 	path = ext/solr
 	url = git://git.typo3.org/TYPO3v4/Extensions/solr.git
+[submodule "ext/dd_googlesitemap"]
+	path = ext/dd_googlesitemap
+	url = git://github.com/dmitryd/typo3_dd_googlesitemap.git
