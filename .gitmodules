@@ -9,4 +9,4 @@
 	url = git://github.com/dmitryd/typo3_dd_googlesitemap.git
 [submodule "ext/realurl"]
 	path = ext/realurl
-	url = https://github.com/TYPO3-Extensions/realurl.git
+	url = git://github.com/TYPO3-Extensions/realurl.git
