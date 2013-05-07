@@ -1,12 +1,12 @@
 [submodule "ext/news"]
 	path = ext/news
 	url = git://git.typo3.org/TYPO3v4/Extensions/news.git
-[submodule "ext/realurl"]
-	path = ext/realurl
-	url = git://github.com/TYPO3-Extensions/realurl.git
 [submodule "ext/solr"]
 	path = ext/solr
 	url = git://git.typo3.org/TYPO3v4/Extensions/solr.git
 [submodule "ext/dd_googlesitemap"]
 	path = ext/dd_googlesitemap
 	url = git://github.com/dmitryd/typo3_dd_googlesitemap.git
+[submodule "ext/realurl"]
+	path = ext/realurl
+	url = git://github.com/tolleiv/Realurl.git
