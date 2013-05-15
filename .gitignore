@@ -1,3 +1,4 @@
 .htaccess
 *.log
 ext/extension_builder
+ext/devlog

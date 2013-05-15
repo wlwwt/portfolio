@@ -54,9 +54,10 @@ page {
 	# JS files to be included
 	includeJSFooter {
 		file1 = EXT:theme_wlwwt/Resources/Public/Template/js/jquery.js
-                file2 = EXT:theme_wlwwt/Resources/Public/Template/js/swipe.min.js
+		file2 = EXT:theme_wlwwt/Resources/Public/Template/js/swipe.min.js
 		file3 = EXT:theme_wlwwt/Resources/Public/Template/js/collapse.js
-		file4 = EXT:theme_wlwwt/Resources/Public/Template/js/wlwwt.js
+		file4 = EXT:theme_wlwwt/Resources/Public/Template/js/typeahead.js
+		file5 = EXT:theme_wlwwt/Resources/Public/Template/js/wlwwt.js
 	}
 
 	#includeJSFooterlibs {

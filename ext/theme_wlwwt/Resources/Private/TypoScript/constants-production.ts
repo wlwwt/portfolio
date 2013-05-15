@@ -30,7 +30,7 @@ plugin.theme_configuration.extensions.news.latest {
 	startingpoint = 10
 	cropMaxCharacters = 120
 }
-plugin.theme_configuration.extensions.news.opengraph.site_name = wlwwt - TYPO3, Magento, Shopware aus Passau
+plugin.theme_configuration.extensions.news.opengraph.site_name = wlwwt - TYPO3, Solr aus Passau
 
 # **********************************************************
 # Changes in styles
@@ -43,13 +43,10 @@ styles.content.imgtext.maxW = 1030
 plugin.theme_configuration.realurl = 1
 
 # **********************************************************
-# Google Analytics Code
-# **********************************************************
-plugin.theme_configuration.realurl = 1
-
-# **********************************************************
 # solr config
 # **********************************************************
-plugin.tx_solr.solr.host = localhost
+plugin.tx_solr.solr.host = 88.198.59.40
 plugin.tx_solr.solr.port = 8080
-plugin.tx_solr.solr.path = /solr/main
+plugin.tx_solr.solr.path = /solr/wlwwt
+plugin.tx_solr.enableDebugMode = 0
+plugin.tx_solr.eid = http://www.wlwwt.de/?eID=tx_solr_suggest&id=22
