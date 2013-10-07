@@ -4,11 +4,11 @@ var slider = new Swipe(document.getElementById('slider'));
 
   $(function(){
 
-    $(".thumbnail").on("hover", function (e) {
+   $(".thumbnail").on("hover", function (e) {
       e.preventDefault()
       $(this)
-        .find(".caption").fadeToggle();
-    })
+        .find(".caption").fadeToggle(200);
+    });
 	
 	$('.typeahead').typeahead({                              
 		limit: 5, 

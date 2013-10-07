@@ -39,8 +39,8 @@
 			</f:then>
 			<f:else>
                                 <n:widget.paginate objects="{news}" as="paginatedNews" configuration="{settings.list.paginate}">
-                                            
-                                    <ul class="thumbnails">
+      
+				    <ul class="thumbnails">
                                         <f:for each="{paginatedNews}" as="newsItem">
                                             <f:render partial="List/Item-list" arguments="{newsItem: newsItem, settings:settings}"/>
                                         </f:for>
